@@ -1,0 +1,173 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto&display=swap');
+
+
+/*  Reset CSS*/
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+html, 
+body{
+    height: 100%;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    overflow-wrap: break-word;
+}
+
+img,
+svg,
+video,
+canvas{
+    display: block;
+    max-width: 100%;
+}
+
+body{
+    -webkit-font-smoothing: antialiased;
+}
+
+/* Global CSS */
+:root{
+    /*Primary Colors*/
+    ---Orange: hsl(25, 97%, 53%);
+
+    /* Neutral Colors */
+    --White: hsl(0, 0%, 100%);
+    --Light-Grey: hsl(217, 12%, 63%);
+    --Medium-Grey: hsl(216, 12%, 54%);
+    --Dark-Blue: hsl(213, 19%, 18%);
+    --Very-Dark-Blue: hsl(216, 12%, 8%);
+    --Black: black;
+    --minor-background: hsl(210, 32%, 22%);
+
+    /* Fonts */
+    --ff-main: 'Overpass', sans-serif;
+    --ff-bold-weight: 700;
+    --ff-weight: 400;
+
+    --content-padding: 1rem;
+    --content-gap: 2.5rem;
+    --border-radius: 1rem;
+
+}
+
+body{
+    font-family: var(--ff-main);
+    line-height: 1.5;
+    background-color: var(--Black);
+
+    display: grid;
+    justify-content: center;
+    color: var(--White);
+    align-items: center;
+    padding: var(--content-padding);
+}
+
+section{
+    background-color: var(--Dark-Blue);
+    padding: var(--content-padding);
+    border-radius: var(--border-radius);
+    display: grid;
+    gap: var(--content-gap);
+    max-width: 450px;
+}
+
+/* Rating Card Styling */
+
+.stars{
+    display: flex;
+    justify-content: space-between;
+}
+
+.star-icon{
+    background-color: var(--minor-background) ;
+    padding: 0.5rem;
+    border-radius: 1rem;
+}
+
+.stars > p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--minor-background);
+    padding: 0.8rem;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    padding: 1rem;
+    cursor: pointer;
+}
+
+.stars > p:hover{
+    background-color: var(---Orange);
+}
+
+.stars > p:focus{
+    background-color: var(--Light-Grey);
+}
+
+.submit{
+    background-color: orange;
+    width: 100%;
+    text-align: center;
+    padding: 0.7rem;
+    border-radius: 2rem;
+    font-weight: var(--ff-bold-weight);
+}
+
+.submit:hover{
+    background-color: var(--White);
+    color: var(---Orange);
+}
+
+h2{
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+p{
+    opacity: 80%;
+}
+
+
+/* Thank You Card Styling */
+/* Add the following CSS code to your styles.css file */
+
+#thank-you {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+}
+
+.thankyou__lastText{
+    margin-bottom: 2rem;
+}
+
+.selected{
+    background-color: var(--minor-background) ;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    color: var(---Orange);
+}
+  

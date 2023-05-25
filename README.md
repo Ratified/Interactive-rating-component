@@ -10,7 +10,7 @@ This is a coding challenge from Frontend Mentor, where the task is to build an i
 ## Challenge Description
 The challenge requires building an interactive rating component that allows users to select a rating from 1 to 5 stars. The component should have hover states for interactive elements and display a "Thank you" card after submitting a rating.
 
-##Technologies Used
+## Technologies Used
 HTML
 
 CSS
